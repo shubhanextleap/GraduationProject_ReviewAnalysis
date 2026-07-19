@@ -1,0 +1,39 @@
+AI-Powered Discovery Engine — Problem Statement (Swiggy Instamart)
+We are building an AI-powered Discovery Engine to analyze user feedback at scale, specifically targeting "Category Inertia" for Swiggy Instamart. The system transforms unstructured feedback into actionable insights to help Growth teams increase Monthly Active Customer (MAC) category diversification.
+Objective
+Increase the percentage of Monthly Active Customers who purchase products from at least one new category every month by identifying and resolving the frictions preventing users from exploring beyond their habitual grocery and snack purchases.
+What the system does
+•	Ingest: Aggregates feedback from App Store/Play Store reviews, Reddit discussions, and social media conversations regarding the Swiggy Instamart experience.
+•	Normalize & Cluster: Filters noise (reviews < 8 words, emojis, non-English) and uses AI clustering to map recurring "habit traps" and "discovery barriers."
+•	Reasoning: Uses LLMs to answer core research questions: Why do users repeat purchases? What prevents exploration? What information do users need before trying a new category?
+•	Deliver: Generates a structured "Discovery Insight Report" containing themes, representative quotes, and actionable ideas for the Growth team.
+Key Requirements
+•	Actionable Insights: Move from raw reviews to concrete "Action Ideas" that the Growth Team can implement.
+•	Validation: All AI-surfaced insights must be cross-verified with 5–6 primary user interviews to prove/disprove findings.
+•	MVP-Ready: The system findings must directly inform an AI-native MVP (e.g., an AI discovery agent or a personalized nudge feature) deployed to production.
+•	Auditability: Every AI-generated theme must be supported by real user quotes found in the analyzed data.
+Who this helps
+Audience	Value
+Growth PMs	Prioritize discovery nudges (e.g., cross-category recommendations) based on validated friction points.
+UX Designers	Identify navigation or UI patterns that hide new categories from habitual buyers.
+Leadership	Understand the correlation between category diversification and customer habit formation.
+Sample Output (Illustrative)
+Swiggy Instamart — Growth Discovery Pulse
+•	Top themes:
+o	The Utility Trap: Users perceive the app as a "utility tool" for immediate needs, not an exploration shop.
+o	Category Discovery Gap: Habitual buyers have a "narrow lens" and rarely notice new arrivals outside their typical search patterns.
+•	Real user quotes:
+o	"My cart is auto-filled with the same snacks. I rarely scroll to explore new arrivals."
+o	"I use Instamart for last-minute snacks, but I don't think to look there for home essentials."
+•	Action ideas:
+o	Risk-Free Nudges: Implement a "Category Intro Offer" at checkout for first-time buyers in a new category.
+o	Smart Replenishment UI: Introduce a "Discovery Slot" in the habitual replenishment cart flow.
+Delivery Expectations
+•	AI Insight Report: A comprehensive summary of user feedback and behavioral patterns.
+•	Research Validation: A summary of findings from 5–6 primary user interviews.
+•	Functional MVP: A production-deployed AI feature, agent, or workflow that addresses the identified "Discovery Barrier."
+Non-goals (Explicit)
+•	Real-time streaming analytics or BI dashboards.
+•	Automated product configuration or CMS updates on the platform.
+•	General-purpose AI assistant; the system is specialized for growth-focused insight discovery.
+

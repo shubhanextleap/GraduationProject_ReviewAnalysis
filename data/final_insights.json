@@ -1,0 +1,50 @@
+{
+    "Q1": {
+        "insight": "Users repeatedly buy from the same categories due to lack of exploration incentives and poor customer experience with new categories.",
+        "citations": []
+    },
+    "Q2": {
+        "insight": "Users are prevented from exploring new categories due to issues like delayed deliveries, high cancellation fees, and poor customer service.",
+        "citations": [
+            "delivery always delayed and if cancel charges us stupids worst experience",
+            "order is half hour late then also ther is no option to cancel order and get refund"
+        ]
+    },
+    "Q3": {
+        "insight": "Users discover products through the app, but the process can be frustrating due to issues like incorrect orders and unhelpful customer support.",
+        "citations": [
+            "i ordered momos, but i was sent pizza instead.",
+            "very bad customer service. item not received and customer service team saying we can only report this issue."
+        ]
+    },
+    "Q4": {
+        "insight": "Habits play a significant role in shopping behavior, as users tend to stick with what they know and avoid new categories due to past negative experiences.",
+        "citations": []
+    },
+    "Q5": {
+        "insight": "Users need accurate and reliable information about products, delivery times, and customer support before trying a new category.",
+        "citations": [
+            "good app, but could be better. it should shortout food according to lower to higher price for each restaurant and all restaurants together too."
+        ]
+    },
+    "Q6": {
+        "insight": "Frustrations emerge repeatedly due to issues like delayed deliveries, high cancellation fees, and unhelpful customer support.",
+        "citations": [
+            "delivery always delayed and if cancel charges us stupids worst experience",
+            "i had a very disappointing experience with swiggy's customer service.",
+            "very worst customer care services. fooling the customers even after sharing the genuine concern."
+        ]
+    },
+    "Q7": {
+        "insight": "No specific user segments are identified as more likely to experiment, but users who have had positive experiences with the app may be more open to trying new categories.",
+        "citations": []
+    },
+    "Q8": {
+        "insight": "Unmet needs emerge consistently across discussions, including the need for reliable delivery times, accurate order fulfillment, and helpful customer support.",
+        "citations": [
+            "i had a very disappointing experience with swiggy's customer service.",
+            "very bad customer service. item not received and customer service team saying we can only report this issue.",
+            "very worst customer care services. fooling the customers even after sharing the genuine concern."
+        ]
+    }
+}
