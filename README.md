@@ -30,4 +30,6 @@ uvicorn app.main:app --reload
 Navigate to `http://localhost:8000` to view the Swiggy Pulse dashboard.
 
 ## Deployment
-This application is containerized and configured for deployment on Railway via the provided `Dockerfile` and `railway.json`.
+This application is containerized and currently deployed live on **Render**. 
+
+**Live Dashboard:** [https://swiggy-pulse-engine.onrender.com](https://swiggy-pulse-engine.onrender.com)
