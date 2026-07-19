@@ -1,7 +1,7 @@
 # System Architecture: AI-Powered Discovery Engine (Swiggy Instamart)
 
 ## Overview
-This document outlines the high-level architecture for the **Part 1 AI-Powered Discovery Engine** designed to analyze user feedback and target "Category Inertia" on the Swiggy Instamart platform. The architecture is modular and uses a Python-native stack designed for high-speed local/cloud deployment on **Railway**.
+This document outlines the high-level architecture for the **Part 1 AI-Powered Discovery Engine** designed to analyze user feedback and target "Category Inertia" on the Swiggy Instamart platform. The architecture is modular and uses a Python-native stack designed for high-speed local/cloud deployment on **Render**.
 
 ---
 
@@ -11,7 +11,7 @@ The Ingestion Layer is responsible for aggregating unstructured data from variou
 - **App & Play Store**: Uses the `google-play-scraper` (Python) to pull user reviews at a scheduled frequency.
 - **Reddit & Community**: Uses `praw` (Python Reddit API Wrapper) to extract discussions regarding quick-commerce and Swiggy Instamart.
 - **Product Reviews & Forums**: Custom Python scrapers (e.g., BeautifulSoup) to extract data from independent product review sites.
-- **Raw Data Storage**: The raw data is saved into local structured CSV files (`data/raw_reviews.csv`) or a lightweight Postgres instance on Railway to ensure highly reliable offline processing.
+- **Raw Data Storage**: The raw data is saved into local structured CSV files (`data/raw_reviews.csv`) or a lightweight Postgres instance on Render to ensure highly reliable offline processing.
 
 ## 2. Data Processing & Normalization Layer
 This layer cleans the raw data and prepares it for AI analysis.
@@ -31,11 +31,10 @@ The core intelligence of the system, responsible for making sense of the feedbac
   - Prompts the LLM to answer the core strategic research questions (e.g., *Why do users repeat purchases? What role do habits play?*).
   - Ensures **Auditability** by instructing the LLM to cite its sources and linking generated themes directly back to the original raw quotes.
 
-## 4. Delivery Layer (Deployed via Railway)
-This layer consumes the AI outputs and formats them for end-users (Growth PMs, UX Designers, Leadership).
+## 4. Delivery Layer (Deployed via Render)
 
-- **Insight Generation Service**: Automatically compiles the "Discovery Insight Report" highlighting Top Themes, Real User Quotes, and Action Ideas.
-- **Web UI / Dashboard**: A web application (e.g., FastAPI backend with a lightweight frontend) **deployed on Railway**. This serves as the presentation layer to validate and demonstrate the engine's insights.
+- **API Layer**: FastAPI handles the routing between the JSON backend and the frontend.
+- **Web UI / Dashboard**: A web application (e.g., FastAPI backend with a lightweight frontend) **deployed on Render**. This serves as the presentation layer to validate and demonstrate the engine's insights.
 
 ---
 
@@ -79,7 +78,7 @@ graph TD
     %% Delivery
     subgraph Delivery & Deployment
         API[Backend API]
-        UI[Railway Deployed Web UI]
+        UI[Render Deployed Web UI]
     end
     
     LLM --> API

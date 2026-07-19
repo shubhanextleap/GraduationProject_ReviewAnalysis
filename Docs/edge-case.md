@@ -36,4 +36,4 @@ This document outlines the potential corner cases, failure modes, and edge cases
 | Edge Case | Description | Mitigation Strategy |
 | :--- | :--- | :--- |
 | **Missing Environment Variables** | Script crashes because `GROQ_API_KEY` or `REDDIT_CLIENT_ID` is missing from the `.env` file. | Add a startup check in the scripts that immediately raises a clear error `ValueError("Missing GROQ_API_KEY")` before executing logic. |
-| **Stale Dashboard Data** | The Railway UI shows outdated insights because the pipeline hasn't run in a week. | Display a "Last Updated: [Timestamp]" on the UI so evaluators know exactly when the data was ingested. |
+| **Stale Dashboard Data** | The Render UI shows outdated insights because the pipeline hasn't run in a week. | Display a "Last Updated: [Timestamp]" on the UI so evaluators know exactly when the data was ingested. |

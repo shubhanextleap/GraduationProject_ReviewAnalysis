@@ -10,7 +10,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the application
 COPY . .
 
-# Expose port (Railway will override this with its own PORT env var)
+# Expose port (Render will override this with its own PORT env var)
 EXPOSE 8000
 
 # Start the FastAPI server using Uvicorn
