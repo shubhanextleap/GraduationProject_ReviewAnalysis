@@ -34,4 +34,4 @@ This application is containerized and currently deployed live on **Render**.
 
 **Live Dashboard:** [https://swiggy-pulse-engine.onrender.com](https://swiggy-pulse-engine.onrender.com)
 
-> ⚠️ **Note for Evaluators:** Because this MVP is hosted on Render's free tier, the server automatically spins down after 15 minutes of inactivity. When you first click the link, it may take **45 to 60 seconds** for the server to "wake up". Please do not close the tab; it will load shortly!
+> ⚠️ **Note for Users:** Because this application is hosted on Render's free tier, the server automatically spins down after 15 minutes of inactivity. When you first click the link, it may take **45 to 60 seconds** for the server to "wake up". Please do not close the tab; it will load shortly!
