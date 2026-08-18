@@ -226,7 +226,7 @@ FORMATTING RULE (CRITICAL): You MUST format your answer EXACTLY according to thi
         user_prompt = f"Here is the clustered user feedback:\n{json.dumps(clustered_data, indent=2)}\n\nUSER QUESTION:\n{question}"
         
         completion = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="openai/gpt-oss-20b",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
